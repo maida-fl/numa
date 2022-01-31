@@ -1,2 +1,2 @@
 # Numa
-E-commerce indumentaria 
+E-commerce menswear
