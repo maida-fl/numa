@@ -1,2 +1,2 @@
-# numa
+# Numa
 E-commerce indumentaria
