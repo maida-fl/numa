@@ -1,10 +1,14 @@
 const express = require('express');
+const path = require('path');
+
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hola, somos Numa')
-});
+app.use(express.static(path.resolve(__dirname, './public')));
 
 app.listen(3000, () => {
     console.log('Numa server running at http://localhost:3000');
-})
+});
+
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/home.html'));
+});
