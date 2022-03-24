@@ -1,38 +1,42 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
 }
 
 /* FONTS */
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    color: #000000;
-    font-weight: 400;
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  color: #000000;
+  font-weight: 400;
 }
 
 section#categories a {
-    color: #3E4749;
+  color: #3e4749;
 }
 section#categories,
 footer a {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body a {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 body li {
-    list-style: none;
+  list-style: none;
 }
 
 header {
-    height: 60px;
-    display: flex;
-    padding: 10px 3rem;
-    align-items: center;
+  height: 60px;
+  display: flex;
+  padding: 10px 3rem;
+  align-items: center;
 }
 
 /* header .logo {
@@ -40,52 +44,51 @@ header {
 } */
 
 .left-nav {
-    width: 80%;
+  width: 80%;
 }
 .right-nav {
-    width: 20%;
+  width: 20%;
 }
 header nav ul {
-    display: flex;
+  display: flex;
 }
 .right-nav ul {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 .left-nav ul {
-    justify-content: flex-start;
+  justify-content: flex-start;
+  padding-left: 1rem;
 }
 .left-nav li {
-    margin: 0 30px;
+  margin: 0 30px;
 }
 .right-nav li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 #main {
-    height: 100vh;
-    /* top: 60px; */
-    background-image: url('../img/home/main-background.jpg');
-    background-size: cover;
-    /* align-items: center; */
-    margin: auto;
-
+  height: 100vh;
+  /* top: 60px; */
+  background-image: url("../img/home/main-background.jpg");
+  background-size: cover;
+  /* align-items: center; */
+  margin: auto;
 }
 .main-sub {
-    color: #f7f7f7;
-    letter-spacing: 0.16em;
-    text-align: center;
+  color: #f7f7f7;
+  letter-spacing: 0.16em;
+  text-align: center;
 }
 .main-title {
-    color: #f7f7f7;
-    font-size: 82px;
-    font-weight: 700;
-    text-align: center;
+  color: #f7f7f7;
+  font-size: 8.2rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .btn-home {
-    color:#f7f7f7;
-    border-color: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: none;
+  color: #f7f7f7;
+  border-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: none;
 }
-
