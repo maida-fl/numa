@@ -33,9 +33,9 @@ body li {
 }
 
 header {
-  height: 60px;
+  min-height: 10vh; /* height: 60px; */
   display: flex;
-  padding: 10px 3rem;
+  padding: 1rem 3rem;
   align-items: center;
 }
 
@@ -67,12 +67,14 @@ header nav ul {
 }
 
 #main {
-  height: 100vh;
+  min-height: 90vh;
   /* top: 60px; */
   background-image: url("../img/home/main-background.jpg");
   background-size: cover;
-  /* align-items: center; */
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .main-sub {
   color: #f7f7f7;
@@ -84,11 +86,67 @@ header nav ul {
   font-size: 8.2rem;
   font-weight: 700;
   text-align: center;
+  margin: 16px 0px 40px;
 }
 
 .btn-home {
+  padding: 1rem 3rem;
   color: #f7f7f7;
-  border-color: #f7f7f7;
-  border-radius: 10px;
-  box-shadow: none;
+  border: 1px solid #f7f7f7;
+  background: none;
+  border-radius: 20px;
+  /* box-shadow: none; */
+}
+
+#shirts,
+#swimwear {
+  min-height: 100vh;
+  display: flex;
+}
+
+div.left-shirts {
+  min-height: 100vh;
+  width: 50%;
+  background-image: url("../img/home/shirts-bg-2.jpg");
+  background-size: cover;
+}
+
+div.right-shirts {
+  min-height: 100vh;
+  width: 50%;
+  background-image: url("../img/home/shirts-bg-1.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.categorias-title {
+  color: #000000;
+  font-size: 8.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-categoria {
+  padding: 1rem 3rem;
+  color: #000000;
+  border: 1px solid #000000;
+  background: none;
+  border-radius: 20px;
+}
+
+#swimwear {
+  background-image: url("../img/home/swimwear-background-edit.jpeg");
+  background-size: cover;
+}
+
+.swimwear-title-btn {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
