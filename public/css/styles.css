@@ -33,15 +33,11 @@ body li {
 }
 
 header {
-  min-height: 10vh; /* height: 60px; */
+  min-height: 10vh;
   display: flex;
   padding: 1rem 3rem;
   align-items: center;
 }
-
-/* header .logo {
-    padding: 0px;
-} */
 
 .left-nav {
   width: 80%;
@@ -71,6 +67,7 @@ header nav ul {
   /* top: 60px; */
   background-image: url("../img/home/main-background.jpg");
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +92,7 @@ header nav ul {
   border: 1px solid #f7f7f7;
   background: none;
   border-radius: 20px;
-  /* box-shadow: none; */
+  /* margin-bottom: 10rem; */
 }
 
 #shirts,
@@ -109,6 +106,7 @@ div.left-shirts {
   width: 50%;
   background-image: url("../img/home/shirts-bg-2.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 div.right-shirts {
@@ -136,6 +134,7 @@ div.right-shirts {
   border: 1px solid #000000;
   background: none;
   border-radius: 20px;
+  margin-bottom: 13rem;
 }
 
 #swimwear {
