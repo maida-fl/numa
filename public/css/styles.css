@@ -190,21 +190,21 @@ div.right-shirts {
 
 /* SERVICES */
 #services {
-  min-height: 100vh;
+  height: 80vh;
 }
 .services-wrapper {
   width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  height: 100%;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 5rem;
   /* background: rosybrown; */
 }
 .services-card {
-  height: 200px;
+  height: 210px;
   width: 200px;
   margin: 1rem;
   /* background: seagreen; */
@@ -235,4 +235,40 @@ div.right-shirts {
 .services-description p {
   font-size: 1.2rem;
   padding-top: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+  background: #f0f0f0;
+  min-height: 20vh;
+}
+.footer-wrapper {
+  /* background-color: aquamarine; */
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-wrapper section {
+  /* background-color: brown; */
+  margin: 3rem 0rem;
+  flex: 1 1 20rem;
+}
+footer h5 {
+  padding-bottom: 2rem;
+}
+.footer-wrapper li {
+  line-height: 1.7;
+}
+.social-media ul {
+  display: flex;
+}
+.social-media li {
+  margin-right: 1.5rem;
+}
+.footer-wrapper img {
+  width: 2.5rem;
 }
