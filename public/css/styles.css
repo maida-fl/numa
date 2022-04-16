@@ -102,7 +102,13 @@ header nav ul {
   border: 1px solid #f7f7f7;
   background: none;
   border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
   /* margin-bottom: 10rem; */
+}
+.btn-home:hover {
+  background: #f7f7f7;
+  color: #1f1f1f;
 }
 
 .main-video {
@@ -151,6 +157,14 @@ div.right-shirts {
   background: none;
   border-radius: 20px;
   margin-bottom: 13rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.btn-categoria:hover {
+  /* background-color: #333333;
+  border-color: #333333; */
+  background-color: #000000;
+  color: #f7f7f7;
 }
 
 #swimwear {
