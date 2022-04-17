@@ -199,8 +199,9 @@ div.right-shirts {
 .categories-card {
   /* flex: 1 1 25rem; */
   /* background: rosybrown; */
-  height: 350px;
-  width: 250px;
+  /* height: 350px;
+  width: 250px; */
+  width: 22.5%;
   margin: 1rem;
 }
 .categories-img {
