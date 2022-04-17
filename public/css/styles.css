@@ -188,9 +188,9 @@ div.right-shirts {
 
 #categories {
   min-height: 100vh;
-  background-color: burlywood;
   display: flex;
   align-items: center;
+  /* background-color: burlywood; */
 }
 .categories-wrapper {
   width: 90%;
@@ -200,14 +200,11 @@ div.right-shirts {
   min-height: 100vh;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: aqua;
+  margin-top: 10vh;
+  /* background-color: aqua; */
 }
 .categories-card {
-  /* height: 350px;
-  width: 250px; */
-  width: 90%;
-  margin: 1rem;
-  /* padding: 2rem; */
+  margin: 2rem 0;
 }
 .categories-img {
   width: 100%;
@@ -225,7 +222,7 @@ div.right-shirts {
   padding: 1.5rem 0rem;
 }
 .categories-title h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 /* SERVICES */
@@ -316,10 +313,16 @@ footer h5 {
 /* MEDIA QUERIES */
 
 @media (min-width: 481px) {
-  /* .categories-wrapper {
-  } */
+  .categories-title h3 {
+    font-size: 1.4rem;
+  }
+  .categories-wrapper {
+    margin-top: 0;
+  }
   .categories-card {
+    margin: 0;
     width: 50%;
+    padding: 0rem 1rem;
   }
 }
 
@@ -329,6 +332,7 @@ footer h5 {
   }
   .categories-card {
     width: 22.5%;
+    padding: 0;
   }
 }
 
