@@ -70,6 +70,8 @@ header nav ul {
   width: 2.6rem;
 }
 
+/* MAIN */
+
 #main {
   min-height: 90vh;
   /* background-image: url("../img/home/main-background.jpg"); --> this is for bcg image option
@@ -117,6 +119,8 @@ header nav ul {
   object-fit: cover;
 }
 
+/* SHIRTS SWIMWEAR CATEGORIES GLOBAL */
+
 #shirts,
 #swimwear {
   min-height: 100vh;
@@ -161,8 +165,6 @@ div.right-shirts {
   transition: all 0.5s ease-in-out;
 }
 .btn-categoria:hover {
-  /* background-color: #333333;
-  border-color: #333333; */
   background-color: #000000;
   color: #f7f7f7;
 }
@@ -186,6 +188,9 @@ div.right-shirts {
 
 #categories {
   min-height: 100vh;
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
 }
 .categories-wrapper {
   width: 90%;
@@ -195,14 +200,14 @@ div.right-shirts {
   min-height: 100vh;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: aqua;
 }
 .categories-card {
-  /* flex: 1 1 25rem; */
-  /* background: rosybrown; */
   /* height: 350px;
   width: 250px; */
-  width: 22.5%;
+  width: 90%;
   margin: 1rem;
+  /* padding: 2rem; */
 }
 .categories-img {
   width: 100%;
@@ -217,7 +222,10 @@ div.right-shirts {
   width: 100%;
   height: 10%;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.5rem 0rem;
+}
+.categories-title h3 {
+  font-size: 1.4rem;
 }
 
 /* SERVICES */
@@ -303,4 +311,29 @@ footer h5 {
 }
 .footer-wrapper img {
   width: 2.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 481px) {
+  /* .categories-wrapper {
+  } */
+  .categories-card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .categories-wrapper {
+    min-height: 100vh;
+  }
+  .categories-card {
+    width: 22.5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .categories-title h3 {
+    font-size: 1.6rem;
+  }
 }
