@@ -313,6 +313,15 @@ footer h5 {
   width: 2.5rem;
 }
 
+/* SCROLL BEHAVIOUR */
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.scrollbar-snap {
+  scroll-snap-align: end;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 481px) {
