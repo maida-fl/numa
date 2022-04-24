@@ -78,6 +78,7 @@ header nav ul {
   background-color: #000000;
   font-weight: 400;
   margin: 5px;
+  transition: all 0.3s ease;
 }
 .burger-nav {
   /* position: absolute; */
@@ -115,6 +116,16 @@ header {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+.toggle .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* MAIN */
