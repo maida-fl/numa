@@ -5,6 +5,7 @@
 }
 html {
   font-size: 62.5%;
+  /* overflow-x: hidden; */
 }
 
 /* FONTS */
@@ -45,12 +46,6 @@ header {
   background-color: #ffffff;
 }
 
-.left-nav {
-  width: 70%;
-}
-.right-nav {
-  width: 30%;
-}
 header nav ul {
   display: flex;
 }
@@ -66,11 +61,16 @@ header nav ul {
 }
 
 .right-nav img {
-  width: 2.6rem;
+  width: 2.4rem;
 }
 
-.burger {
+/* HAMBURGER MENU */
+.mobile-hidden {
   display: none;
+}
+.burger {
+  display: block;
+  cursor: pointer;
 }
 .burger div {
   width: 25px;
@@ -78,6 +78,25 @@ header nav ul {
   background-color: #000000;
   font-weight: 400;
   margin: 5px;
+}
+.burger-nav ul {
+  position: absolute;
+  right: 0px;
+  height: 90vh;
+  top: 10vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+  transform: translateX(100%);
+}
+.burger-nav ul li {
+  opacity: 0;
+}
+header {
+  justify-content: space-between;
 }
 
 /* MAIN */
@@ -358,6 +377,24 @@ html {
 }
 
 @media (min-width: 769px) {
+  /* html {
+    overflow-x: unset;
+  } */
+  .left-nav {
+    width: 70%;
+  }
+  .right-nav {
+    width: 30%;
+  }
+  .burger {
+    display: none;
+  }
+  .burger-nav {
+    display: none;
+  }
+  .mobile-hidden {
+    display: block;
+  }
   .burger {
     display: none;
   }
@@ -388,14 +425,14 @@ html {
 
 @media (min-width: 1024px) {
   .right-nav li {
-    margin: 0 2.5rem;
+    margin: 0 1.5rem;
   }
   .left-nav li {
     margin: 0 4rem;
   }
   .left-nav ul {
     justify-content: flex-start;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
   }
   .categories-title h3 {
     font-size: 1.6rem;
