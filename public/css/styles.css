@@ -5,7 +5,7 @@
 }
 html {
   font-size: 62.5%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 /* FONTS */
@@ -79,8 +79,10 @@ header nav ul {
   font-weight: 400;
   margin: 5px;
 }
-.burger-nav ul {
-  position: absolute;
+.burger-nav {
+  /* position: absolute; */
+  position: fixed;
+  z-index: 3;
   right: 0px;
   height: 90vh;
   top: 10vh;
@@ -91,12 +93,17 @@ header nav ul {
   align-items: center;
   justify-content: space-around;
   transform: translateX(100%);
+  transition: transform 0.5s ease-in;
 }
-.burger-nav ul li {
+.burger-nav li {
   opacity: 0;
 }
 header {
   justify-content: space-between;
+}
+
+.burger-nav-active {
+  transform: translateX(0%);
 }
 
 /* MAIN */
