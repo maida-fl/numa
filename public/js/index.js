@@ -20,3 +20,15 @@ const navSlide = () => {
 }
 
 navSlide();
+
+const searchSlide = () => {
+    const searchButton = document.querySelector('.search-icon');
+    const searchBar = document.querySelector('.search-wrapper');
+    
+    searchButton.addEventListener('click', () => {
+        //Toggle SearchBar
+        searchBar.classList.toggle('search-bar-active');
+    });
+}
+
+searchSlide();

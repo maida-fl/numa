@@ -137,9 +137,12 @@ header {
   justify-content: center;
   position: absolute;
   top: 10vh;
-  z-index: 3;
+  z-index: 2;
   background-color: #ffffff;
   padding: 10px;
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in;
 }
 .search-bar {
   width: 90%;
@@ -181,6 +184,9 @@ header {
 }
 .search-bar img {
   width: 2rem;
+}
+.search-bar-active {
+  transform: translateY(0%);
 }
 /* MAIN */
 
