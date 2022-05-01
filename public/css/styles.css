@@ -90,11 +90,12 @@ header nav ul {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  width: 50%;
-  align-items: center;
+  width: 100%;
+  align-items: left;
   justify-content: space-around;
+  padding: 6rem;
   transform: translateX(-100%);
-  transition: transform 0.5s ease-in;
+  transition: transform 0.6s ease-in-out;
 }
 .burger-nav li {
   opacity: 0;
@@ -106,11 +107,19 @@ header {
 .burger-nav-active {
   transform: translateX(0%);
 }
+.burger-nav img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+.burger-nav a {
+  display: flex;
+  align-items: center;
+}
 
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-1px);
   }
   to {
     opacity: 1;
@@ -142,7 +151,7 @@ header {
   padding: 10px;
   position: fixed;
   transform: translateY(-100%);
-  transition: transform 0.5s ease-in;
+  transition: transform 0.45s ease-in-out;
 }
 .search-bar {
   width: 90%;
@@ -165,6 +174,7 @@ header {
 }
 #input-search {
   flex-grow: 1;
+  width: 60%;
   height: 45px;
   border: none;
   outline: none;
@@ -175,8 +185,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 40%;
+  max-width: 44px;
   padding: 5px;
   border: none;
   background-color: transparent;
@@ -188,6 +198,14 @@ header {
 .search-bar-active {
   transform: translateY(0%);
 }
+
+.search-wrapper-burger {
+  width: 100%;
+}
+.search-bar-burger {
+  width: 100%;
+}
+
 /* MAIN */
 
 #main {
@@ -228,7 +246,7 @@ header {
 }
 .btn-home:hover {
   background: #f7f7f7;
-  color: #1f1f1f;
+  color: rgba(31, 31, 31, 0.95);
 }
 
 .main-video {
@@ -284,7 +302,7 @@ div.right-shirts {
 }
 .btn-categoria:hover {
   background-color: #000000;
-  color: #f7f7f7;
+  color: rgba(247, 247, 247, 0.8);
 }
 
 #swimwear {
@@ -431,19 +449,15 @@ footer h5 {
   width: 2.5rem;
 }
 
-/* SCROLL BEHAVIOUR SMOOTH AND SNAP */
-html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-}
-.scrollbar-snap {
-  scroll-snap-align: end;
-}
-
 /* MEDIA QUERIES */
 
 @media (min-width: 481px) {
+  .burger-nav {
+    width: 70%;
+  }
+  #input-search {
+    flex-grow: 1;
+  }
   .categories-title h3 {
     font-size: 1.4rem;
   }
@@ -536,5 +550,15 @@ html {
     max-width: 200px; */
     /* margin: 1rem; */
     /* background: seagreen; */
+  }
+
+  /* SCROLL BEHAVIOUR SMOOTH AND SNAP */
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+  .scrollbar-snap {
+    scroll-snap-align: end;
   }
 }
