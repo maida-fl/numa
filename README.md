@@ -4,6 +4,8 @@ E-commerce - menswear
 
 ## 🔭 Deployment
 
+https://numa-shop.herokuapp.com/
+
 ## 📚 Technical details
 
 ```
