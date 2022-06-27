@@ -360,6 +360,16 @@ div.right-shirts {
 .categories-title h3 {
   font-size: 1.6rem;
 }
+/* Card zoom in */
+.categories-img {
+  overflow: hidden;
+}
+.categories-img img {
+  transition: all 0.85s ease;
+}
+.categories-img:hover img {
+  transform: scale(1.07);
+}
 
 /* SERVICES */
 #services {
