@@ -365,10 +365,10 @@ div.right-shirts {
   overflow: hidden;
 }
 .categories-img img {
-  transition: all 0.85s ease;
+  transition: all 0.9s ease;
 }
 .categories-img:hover img {
-  transform: scale(1.07);
+  transform: scale(1.03);
 }
 
 /* SERVICES */
